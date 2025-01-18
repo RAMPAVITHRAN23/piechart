@@ -1,0 +1,9 @@
+[
+    { "name": "College A", "registrations": 120 },
+    { "name": "College B", "registrations": 85 },
+    { "name": "College C", "registrations": 150 },
+    { "name": "College D", "registrations": 60 },
+    { "name": "College E", "registrations": 95 },
+    { "name": "College F", "registrations": 75 },
+    { "name": "College G", "registrations": 130 }
+]
