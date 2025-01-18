@@ -5,5 +5,14 @@
     { "name": "College D", "registrations": 60 },
     { "name": "College E", "registrations": 95 },
     { "name": "College F", "registrations": 75 },
-    { "name": "College G", "registrations": 130 }
+    { "name": "College G", "registrations": 130 },
+    { "name": "College H", "registrations": 145 },
+    { "name": "College I", "registrations": 112 },
+    { "name": "College J", "registrations": 89 },
+    { "name": "College K", "registrations": 67 },
+    { "name": "College L", "registrations": 140 },
+    { "name": "College M", "registrations": 150 },
+    { "name": "College N", "registrations": 78 },
+    { "name": "College O", "registrations": 120 }
+    
 ]

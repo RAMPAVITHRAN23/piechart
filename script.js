@@ -1,7 +1,7 @@
 // Function to fetch data from a JSON source
 async function fetchCollegeData() {
     try {
-        const response = await fetch('colleges.json');
+        const response = await fetch('colleges.json'); // Replace with your JSON API endpoint
         const data = await response.json();
         return data;
     } catch (error) {
@@ -17,15 +17,18 @@ function processCollegeData(data) {
     return { labels, values };
 }
 
-// Function to generate dynamic colors
+// Function to generate dynamic HSL colors
 function generateDynamicColors(count) {
     const colors = [];
+    const hueStep = 360 / Math.min(count, 360); // Ensure evenly distributed hues
+
     for (let i = 0; i < count; i++) {
-        const r = Math.floor(Math.random() * 256);
-        const g = Math.floor(Math.random() * 256);
-        const b = Math.floor(Math.random() * 256);
-        colors.push(`rgb(${r}, ${g}, ${b})`);
+        const hue = Math.round(hueStep * i) % 360; // Cycle through hues (0–359)
+        const saturation = 60 + (i % 10) * 4; // Vary saturation (60–100%)
+        const lightness = 50 + (i % 7) * 5;  // Vary lightness (50–80%)
+        colors.push(`hsl(${hue}, ${saturation}%, ${lightness}%)`);
     }
+
     return colors;
 }
 
